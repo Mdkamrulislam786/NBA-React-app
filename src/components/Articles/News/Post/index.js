@@ -12,7 +12,7 @@ class NewsArticles extends Component {
         team:[]
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         axios.get(`${URL}/articles?id=${this.props.match.params.id}`)
         .then( response => {
             let article = response.data[0];
