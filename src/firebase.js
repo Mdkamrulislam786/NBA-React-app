@@ -21,9 +21,21 @@ const firebaseConfig = {
   const firebaseTeams = firebaseDB.ref('teams')
   const firebaseVideos = firebaseDB.ref('videos')
 
+  const firebaseLoop= ( snapshot ) => {
+    const data = [];
+    snapshot.forEach((childSnapshot) => {
+      data.push({
+        ...childSnapshot.val(),
+        id: childSnapshot.key,
+      })
+  })
+  return data;
+}
+
   export {
       firebase,
       firebaseDB,
+      firebaseLoop,
       firebaseArticle,
       firebaseTeams,
       firebaseVideos
