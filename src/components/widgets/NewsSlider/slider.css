@@ -26,3 +26,43 @@
     font-size:28px;
     box-sizing: border-box;
 }
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .featured_image {
+        height:95vh;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    .featured_caption {
+        color:#ffffff;
+        text-align: center;
+        align-items: center;
+        width:100%;
+        padding:40px;
+        font-weight:400;
+        font-size:40px;
+        box-sizing: border-box;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .featured_image {
+        height:95vh;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+    .featured_caption {
+        color:#ffffff;
+        text-align: center;
+        align-items: center;
+        width:100%;
+        padding:40px;
+        font-weight:400;
+        font-size:50px;
+        box-sizing: border-box;
+    }
+}
